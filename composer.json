@@ -1,0 +1,46 @@
+{
+    "name": "namtenten/laravel-shortcodes",
+    "description": "ShortCodes",
+    "license": "MIT",
+    "keywords": ["laravel", "shortcodes"],
+    "authors": [
+        {
+            "name": "Nguyen Ngoc Nam",
+            "email": "thietlalung@yahoo.com.vn"
+        }
+    ],
+    "homepage": "https://github.com/namtenten/laravel-shortcodes",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": ">=5.5",
+        "illuminate/contracts": ">=5.5",
+        "illuminate/view": ">=5.5",
+        "illuminate/container": ">=5.5",
+        "illuminate/console": ">=5.5",
+        "illuminate/cache": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NamTenTen\\ShortCodes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NamTenTen\\ShortCodes\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NamTenTen\\ShortCodes\\ServiceProvider"
+            ],
+            "aliases": {
+                "Widget": "NamTenTen\\ShortCodes\\Facade",
+                "AsyncWidget": "NamTenTen\\ShortCodes\\AsyncFacade"
+            }
+        }
+    }
+}
